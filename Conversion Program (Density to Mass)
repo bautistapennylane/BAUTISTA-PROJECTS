@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Conversion {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the density (kg/m^3): ");
+        double density = scanner.nextDouble();
+
+        System.out.print("Enter the volume (m^3): ");
+        double volume = scanner.nextDouble();
+
+        double mass = density * volume;
+     
+        System.out.println("The mass is: " + mass + " kg");
+        
+    }
+}
