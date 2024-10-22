@@ -24,7 +24,6 @@ public class JavaZoo {
             return age;
         }
 
-        @Override
         public String toString() {
             return "Cage [age=" + age + "]";
         }
