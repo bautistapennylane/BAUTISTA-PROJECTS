@@ -42,9 +42,7 @@ public class ZooAnimal {
         System.out.println("Type: " + type);
         System.out.println("Age: " + age);
     }
-
-    // toString() method implementation
-    @Override
+    
     public String toString() {
         return "ZooAnimal{" +
                 "name='" + name + '\'' +
