@@ -63,7 +63,8 @@ public class ZooAnimal {
 
         // Print the string representation of the object using toString()
         System.out.println(animal.toString());
-    }
-}
+
+    }//end of main method
+}//end of class
 
 
