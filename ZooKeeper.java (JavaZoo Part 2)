@@ -1,52 +1,60 @@
-public class ZooKeeper{
-    
+public class ZooKeeper {
+
     private String name;
     private String title;
     private double playRate;
     private boolean degree;
-    
-    public ZooKeeper() {	
+
+    public ZooKeeper() {
     }
-    
-    //setter
-    public void setName(String name){
+
+    // setter
+    public void setName(String name) {
         this.name = name;
     }
-    public void setTitle(String title){
+
+    public void setTitle(String title) {
         this.title = title;
     }
-    public void setPlayRate(double playRate){
+
+    public void setPlayRate(double playRate) {
         this.playRate = playRate;
     }
-    //getters 
-    public String getName(){
+
+    // getters
+    public String getName() {
         return name;
     }
-    public String getTitle(){
+
+    public String getTitle() {
         return title;
     }
-    public double getPlayRate(){
+
+    public double getPlayRate() {
         return playRate;
     }
-    public boolean hasDegree(){
+
+    public boolean hasDegree() {
         return degree;
     }
-    
+
     @Override
     public String toString() {
         return "ZooKeeper [name=" + name + ", title=" + title + ", playRate=" + playRate + ", degree=" + degree + "]";
     }
 
-     public static void main(String[]args){	
-      ZooKeeper keeper = new ZooKeeper();
-          
-      keeper.setName("Penny");
-      keeper.setTitle("Barista");
-      keeper.setPlayRate(50.00);
-      
-      System.out.println("Name: " + keeper.getName());
-      System.out.println("Title: " + keeper.getTitle());
-      System.out.println("Playrate: " + keeper.getPlayRate());
+    public static void main(String[] args) {
+        ZooKeeper keeper = new ZooKeeper();
 
-     }//end of main method
-}//end of class
+        keeper.setName("Penny");
+        keeper.setTitle("Barista");
+        keeper.setPlayRate(50.00);
+
+        // Print properties and methods (using getter methods)
+        System.out.println("Name: " + keeper.getName());
+        System.out.println("Title: " + keeper.getTitle());
+        System.out.println("Play Rate: " + keeper.getPlayRate());
+        System.out.println("Has Degree: " + keeper.hasDegree());
+        System.out.println("toString(): " + keeper.toString()); // Include toString() output
+    }
+}
