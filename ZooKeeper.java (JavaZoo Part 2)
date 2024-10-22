@@ -48,5 +48,5 @@ public class ZooKeeper{
       System.out.println("Title: " + keeper.getTitle());
       System.out.println("Playrate: " + keeper.getPlayRate());
 
-     }
-}
+     }//end of main method
+}//end of class
