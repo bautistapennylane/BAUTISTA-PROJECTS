@@ -1,0 +1,61 @@
+public class Cage {		
+
+    private int length;
+    private int width;
+    private int height;
+    private boolean clean;
+    private boolean covered;
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public boolean isClean() {
+        return clean;
+    }
+
+    public boolean isCovered() {
+        return covered;
+    }
+
+    @Override
+    public String toString() {
+        return "Cage [length=" + length + ", width=" + width + ", height=" + height + ", clean=" + clean + ", covered="
+                + covered + "]";
+    }
+
+    public static void main(String[] args) {
+
+        Cage cage = new Cage();
+
+        cage.setLength(20);
+        cage.setWidth(40);
+        cage.setHeight(20);
+
+        System.out.println("Cage Length: " + cage.getLength());
+        System.out.println("Cage Width: " + cage.getWidth());
+        System.out.println("Cage Height: " + cage.getLength());
+        System.out.println(cage); 
+
+    }//end of main method
+}//end of class
