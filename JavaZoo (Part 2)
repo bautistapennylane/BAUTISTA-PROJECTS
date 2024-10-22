@@ -1,0 +1,33 @@
+public class JavaZoo {
+
+    public static void main(String[] args) {
+        // instantiate the Cage class
+        Cage cage = new Cage();
+
+        cage.setAge(2);
+        System.out.println(cage.getAge()); 
+        System.out.println(cage); 
+    } // end of main method
+
+    public static class Cage { 
+        private int age;
+
+        // Constructor
+        public Cage() {
+        } // end
+
+        // Changed return type to void
+        public void setAge(int age) {
+            this.age = age;
+        } // end of setAge
+        public int getAge() {
+            return age;
+        }
+
+        @Override
+        public String toString() {
+            return "Cage [age=" + age + "]";
+        }
+
+    }
+}
