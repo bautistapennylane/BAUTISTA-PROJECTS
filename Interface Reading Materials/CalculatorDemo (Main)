@@ -1,0 +1,8 @@
+public class CalculatorDemo {
+    public static void main(String[] args) {
+        Calculator.displayWelcomeMessage();
+        BasicCalculator calculator = new BasicCalculator();
+        int result = calculator.add(5, 10);
+        System.out.println("The sum is: " + result);
+    }
+}
