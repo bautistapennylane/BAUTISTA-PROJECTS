@@ -1,0 +1,15 @@
+interface Calculator {
+    int add (int a, int b);
+    static void displayWelcomeMessage() {
+        System.out.println("Welcome to the Calculator Interface");
+    
+    }
+}
+
+class BasicCalculator implements Calculator {
+ @Override
+ public int add(int a, int b) {
+     return a + b;
+ }
+ 
+}
